@@ -45,11 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Linear Motion.cs">
+    <Compile Include="AngularMotion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Linear Motion.Designer.cs">
-      <DependentUpon>Linear Motion.cs</DependentUpon>
+    <Compile Include="AngularMotion.Designer.cs">
+      <DependentUpon>AngularMotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinearMotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinearMotion.Designer.cs">
+      <DependentUpon>LinearMotion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
