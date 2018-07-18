@@ -1,4 +1,0 @@
-C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\ExportToAerotech\bin\Debug\ExportToAerotech.dll
-C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\ExportToAerotech\bin\Debug\ExportToAerotech.pdb
-C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\ExportToAerotech\obj\Debug\ExportToAerotech.dll
-C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\ExportToAerotech\obj\Debug\ExportToAerotech.pdb

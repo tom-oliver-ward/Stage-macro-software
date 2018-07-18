@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ImportFromAerotech")]
+[assembly: AssemblyTitle("DielectricConversion")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ImportFromAerotech")]
+[assembly: AssemblyProduct("DielectricConversion")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("65ee62f6-7eb4-42c5-b403-516c971787fd")]
+[assembly: Guid("71f742df-f184-4f29-b435-18fc251064b7")]
 
 // Version information for an assembly consists of the following four values:
 //

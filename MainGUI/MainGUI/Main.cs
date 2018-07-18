@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,7 +75,7 @@ namespace MainGUI
                 string file = openFileDialog1.FileName;
                 try
                 {
-                    string text=File
+                    string text = file;
                 }
                 catch(IOException)
                 {
