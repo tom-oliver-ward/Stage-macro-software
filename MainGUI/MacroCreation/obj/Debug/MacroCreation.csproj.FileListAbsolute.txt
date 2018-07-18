@@ -1,0 +1,8 @@
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroCreation\bin\Debug\MacroCreation.exe.config
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroCreation\bin\Debug\MacroCreation.exe
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroCreation\bin\Debug\MacroCreation.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroCreation\obj\Debug\MacroCreation.csprojResolveAssemblyReference.cache
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroCreation\obj\Debug\MacroCreation.Properties.Resources.resources
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroCreation\obj\Debug\MacroCreation.csproj.GenerateResource.Cache
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroCreation\obj\Debug\MacroCreation.exe
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroCreation\obj\Debug\MacroCreation.pdb

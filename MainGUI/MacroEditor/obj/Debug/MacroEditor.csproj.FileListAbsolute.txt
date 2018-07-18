@@ -1,0 +1,7 @@
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEditor\bin\Debug\MacroEditor.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEditor\bin\Debug\MacroEditor.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEditor\obj\Debug\MacroEditor.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEditor\obj\Debug\MacroEditor.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEditor\obj\Debug\MacroEditor.csprojResolveAssemblyReference.cache
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEditor\obj\Debug\MacroEditor.Main.resources
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEditor\obj\Debug\MacroEditor.csproj.GenerateResource.Cache

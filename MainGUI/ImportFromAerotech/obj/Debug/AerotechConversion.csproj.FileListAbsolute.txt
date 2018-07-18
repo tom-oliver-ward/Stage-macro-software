@@ -1,0 +1,5 @@
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\ImportFromAerotech\bin\Debug\ImportFromAerotech.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\ImportFromAerotech\bin\Debug\ImportFromAerotech.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\ImportFromAerotech\obj\Debug\AerotechConversion.csprojResolveAssemblyReference.cache
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\ImportFromAerotech\obj\Debug\ImportFromAerotech.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\ImportFromAerotech\obj\Debug\ImportFromAerotech.pdb

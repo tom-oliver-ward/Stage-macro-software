@@ -1,0 +1,11 @@
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MainGUI\bin\Debug\MainGUI.exe.config
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MainGUI\bin\Debug\MainGUI.exe
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MainGUI\bin\Debug\MainGUI.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MainGUI\obj\Debug\MainGUI.csprojResolveAssemblyReference.cache
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MainGUI\obj\Debug\MainGUI.Properties.Resources.resources
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MainGUI\obj\Debug\MainGUI.csproj.GenerateResource.Cache
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MainGUI\obj\Debug\MainGUI.exe
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MainGUI\obj\Debug\MainGUI.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MainGUI\obj\Debug\MainGUI.Main.resources
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MainGUI\bin\Debug\MacroEdit.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MainGUI\bin\Debug\MacroEdit.pdb

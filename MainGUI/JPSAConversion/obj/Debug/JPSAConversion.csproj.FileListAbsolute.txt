@@ -1,0 +1,5 @@
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\bin\Debug\JPSAConversion.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\bin\Debug\JPSAConversion.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\obj\Debug\JPSAConversion.csprojResolveAssemblyReference.cache
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\obj\Debug\JPSAConversion.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\obj\Debug\JPSAConversion.pdb

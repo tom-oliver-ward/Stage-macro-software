@@ -1,0 +1,5 @@
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctions\bin\Debug\CommonFunctions.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctions\bin\Debug\CommonFunctions.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctions\obj\Debug\CommonFunctions.csprojResolveAssemblyReference.cache
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctions\obj\Debug\CommonFunctions.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctions\obj\Debug\CommonFunctions.pdb
