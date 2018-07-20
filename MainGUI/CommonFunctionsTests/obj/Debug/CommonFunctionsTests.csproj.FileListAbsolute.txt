@@ -1,0 +1,16 @@
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\bin\Debug\CommonFunctionsTests.dll
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\bin\Debug\CommonFunctionsTests.pdb
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\bin\Debug\CommonFunctions.dll
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\bin\Debug\CommonFunctions.pdb
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\obj\Debug\CommonFunctionsTests.csprojAssemblyReference.cache
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\obj\Debug\CommonFunctionsTests.csproj.CoreCompileInputs.cache
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\obj\Debug\CommonFunctionsTests.csproj.CopyComplete
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\obj\Debug\CommonFunctionsTests.dll
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\CommonFunctionsTests\obj\Debug\CommonFunctionsTests.pdb
