@@ -47,7 +47,7 @@ namespace CommonFunctions
             
 
             int pos = filepath.LastIndexOf(".");
-            string extension = filepath.Substring(pos, filepath.Length - pos);
+            string extension = filepath.Substring(pos+1, filepath.Length - pos-1);
 
             if (extension == Aerotech) { fileType = 0; }
             else if (extension == Dielectric) { fileType = 1; }

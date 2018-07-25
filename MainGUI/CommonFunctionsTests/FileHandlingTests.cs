@@ -17,7 +17,7 @@ namespace CommonFunctions.Tests
             //Arrange
 
             FileHandling currentFile = new FileHandling();
-            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\ReadTest.txt";
+            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\ReadTest.demcr";
             List<string> result = new List<string>
             {
                 "Does it Work?..",
@@ -29,6 +29,21 @@ namespace CommonFunctions.Tests
 
             //Assert
             Assert.AreEqual(result[0] + result[1], actual[0] + actual[1]);
+        }
+
+        [TestMethod()]
+        public void ReadFileTypeTest()
+        {
+            //Arrange
+            FileHandling currentFile = new FileHandling();
+            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\ReadTest.demcr";
+            int expectedType = 1;
+
+            //Act
+            int type = currentFile.ReadFileType(filepath);
+
+            //Assert
+            Assert.AreEqual(expectedType, type);
         }
     }
 }

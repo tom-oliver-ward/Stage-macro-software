@@ -8,3 +8,9 @@ C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\bi
 C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\obj\Debug\JPSAConversion.dll
 C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\obj\Debug\JPSAConversion.pdb
 C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\obj\Debug\JPSAConversion.csproj.CoreCompileInputs.cache
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\bin\Debug\JPSAConversion.dll
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\bin\Debug\JPSAConversion.pdb
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\obj\Debug\JPSAConversion.csprojResolveAssemblyReference.cache
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\obj\Debug\JPSAConversion.csproj.CoreCompileInputs.cache
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\obj\Debug\JPSAConversion.dll
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\JPSAConversion\obj\Debug\JPSAConversion.pdb

@@ -13,3 +13,11 @@ C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\obj\Deb
 C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\obj\Debug\MacroEdit.pdb
 C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\obj\Debug\MacroEdit.csprojAssemblyReference.cache
 C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\obj\Debug\MacroEdit.csproj.CoreCompileInputs.cache
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\bin\Debug\MacroEdit.dll
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\bin\Debug\MacroEdit.pdb
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\obj\Debug\MacroEdit.csprojResolveAssemblyReference.cache
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\obj\Debug\MacroEdit.MacroEditor.resources
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\obj\Debug\MacroEdit.csproj.GenerateResource.Cache
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\obj\Debug\MacroEdit.csproj.CoreCompileInputs.cache
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\obj\Debug\MacroEdit.dll
+F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\MacroEdit\obj\Debug\MacroEdit.pdb
