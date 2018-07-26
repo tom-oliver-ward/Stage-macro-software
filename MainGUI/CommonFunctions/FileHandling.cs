@@ -40,15 +40,15 @@ namespace CommonFunctions
         {
             //Where 0 is Aerotech, 1 Dielectric, 2 is JPSA, -1 is error
             int fileType;
-
             string Aerotech=null;
             string Dielectric = "demcr";
             string JPSA = null ;
             
-
+            //find file extension
             int pos = filepath.LastIndexOf(".");
             string extension = filepath.Substring(pos+1, filepath.Length - pos-1);
 
+            //assign file extension 
             if (extension == Aerotech) { fileType = 0; }
             else if (extension == Dielectric) { fileType = 1; }
             else if (extension == JPSA) { fileType = 2; }
