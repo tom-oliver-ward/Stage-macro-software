@@ -11,3 +11,5 @@ F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversio
 C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversion\obj\Debug\DielectricConversion.csprojResolveAssemblyReference.cache
 C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversion\obj\Debug\DielectricConversion.dll
 C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversion\obj\Debug\DielectricConversion.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversion\bin\Debug\DielectricConversion.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversion\bin\Debug\DielectricConversion.pdb

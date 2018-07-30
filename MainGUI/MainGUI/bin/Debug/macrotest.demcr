@@ -1,0 +1,781 @@
+Loop Start (10 iterations)\nMove absolute (APT X)\nDelay (1000ms)\nLoop stop
+<!--The table and data cluster are separated here--><Array>
+<Name></Name>
+<Dimsize>4</Dimsize>
+<Cluster>
+<Name>Macro Data Cluster</Name>
+<NumElts>15</NumElts>
+<U32>
+<Name>Task Number</Name>
+<Val>1</Val>
+</U32>
+<U32>
+<Name>Loop Level</Name>
+<Val>0</Val>
+</U32>
+<String>
+<Name>Task Type</Name>
+<Val>Loop</Val>
+</String>
+<Cluster>
+<Name>Loop Cluster</Name>
+<NumElts>2</NumElts>
+<EL>
+<Name>Loop Start/Stop</Name>
+<Choice>Loop Start</Choice>
+<Choice>Loop Stop</Choice>
+<Val>0</Val>
+</EL>
+<U32>
+<Name>Number of Iterations</Name>
+<Val>10</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>APT X Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT X Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>APT X Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT X Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT X Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>APT Y Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT Y Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>APT Y Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Y Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Y Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>APT Z Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT Z Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>APT Z Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Z Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Z Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Piezo X Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>Piezo X Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>Piezo X Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo X Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo X Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Piezo Y Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>Piezo Y Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>Piezo Y Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo Y Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo Y Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Delay Cluster</Name>
+<NumElts>1</NumElts>
+<U32>
+<Name>Delay (ms)</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Shutter Cluster</Name>
+<NumElts>2</NumElts>
+<EL>
+<Name>Shutter Mode</Name>
+<Choice>Open</Choice>
+<Choice>Close</Choice>
+<Choice>Fire</Choice>
+<Val>0</Val>
+</EL>
+<U32>
+<Name>Fire Duration (ms)</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Attenutation Cluster</Name>
+<NumElts>1</NumElts>
+<DBL>
+<Name>Energy (%)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Beam Alignment Cluster</Name>
+<NumElts>1</NumElts>
+<EL>
+<Name>Beam Alignment</Name>
+<Choice>Inspection</Choice>
+<Choice>Laser</Choice>
+<Val>0</Val>
+</EL>
+</Cluster>
+<Cluster>
+<Name>Pulse Picker Cluster</Name>
+<NumElts>3</NumElts>
+<EL>
+<Name>Mode</Name>
+<Choice>Finite Pulses</Choice>
+<Choice>Free Running</Choice>
+<Choice>Stop</Choice>
+<Val>0</Val>
+</EL>
+<U32>
+<Name>Frequency</Name>
+<Val>0</Val>
+</U32>
+<U32>
+<Name>No. of Finite Pulses</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Path>
+<Name>SLM Image Path</Name>
+<Val></Val>
+</Path>
+</Cluster>
+<Cluster>
+<Name>Macro Data Cluster</Name>
+<NumElts>15</NumElts>
+<U32>
+<Name>Task Number</Name>
+<Val>2</Val>
+</U32>
+<U32>
+<Name>Loop Level</Name>
+<Val>0</Val>
+</U32>
+<String>
+<Name>Task Type</Name>
+<Val>Move Absolute</Val>
+</String>
+<Cluster>
+<Name>Loop Cluster</Name>
+<NumElts>2</NumElts>
+<EL>
+<Name>Loop Start/Stop</Name>
+<Choice>Loop Start</Choice>
+<Choice>Loop Stop</Choice>
+<Val>0</Val>
+</EL>
+<U32>
+<Name>Number of Iterations</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>APT X Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT X Movement?</Name>
+<Val>1</Val>
+</Boolean>
+<DBL>
+<Name>APT X Position</Name>
+<Val>10.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT X Velocity</Name>
+<Val>10.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT X Acceleration</Name>
+<Val>10.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>APT Y Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT Y Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>APT Y Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Y Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Y Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>APT Z Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT Z Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>APT Z Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Z Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Z Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Piezo X Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>Piezo X Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>Piezo X Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo X Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo X Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Piezo Y Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>Piezo Y Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>Piezo Y Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo Y Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo Y Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Delay Cluster</Name>
+<NumElts>1</NumElts>
+<U32>
+<Name>Delay (ms)</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Shutter Cluster</Name>
+<NumElts>2</NumElts>
+<EL>
+<Name>Shutter Mode</Name>
+<Choice>Open</Choice>
+<Choice>Close</Choice>
+<Choice>Fire</Choice>
+<Val>0</Val>
+</EL>
+<U32>
+<Name>Fire Duration (ms)</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Attenutation Cluster</Name>
+<NumElts>1</NumElts>
+<DBL>
+<Name>Energy (%)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Beam Alignment Cluster</Name>
+<NumElts>1</NumElts>
+<EL>
+<Name>Beam Alignment</Name>
+<Choice>Inspection</Choice>
+<Choice>Laser</Choice>
+<Val>0</Val>
+</EL>
+</Cluster>
+<Cluster>
+<Name>Pulse Picker Cluster</Name>
+<NumElts>3</NumElts>
+<EL>
+<Name>Mode</Name>
+<Choice>Finite Pulses</Choice>
+<Choice>Free Running</Choice>
+<Choice>Stop</Choice>
+<Val>0</Val>
+</EL>
+<U32>
+<Name>Frequency</Name>
+<Val>0</Val>
+</U32>
+<U32>
+<Name>No. of Finite Pulses</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Path>
+<Name>SLM Image Path</Name>
+<Val></Val>
+</Path>
+</Cluster>
+<Cluster>
+<Name>Macro Data Cluster</Name>
+<NumElts>15</NumElts>
+<U32>
+<Name>Task Number</Name>
+<Val>3</Val>
+</U32>
+<U32>
+<Name>Loop Level</Name>
+<Val>0</Val>
+</U32>
+<String>
+<Name>Task Type</Name>
+<Val>Delay</Val>
+</String>
+<Cluster>
+<Name>Loop Cluster</Name>
+<NumElts>2</NumElts>
+<EL>
+<Name>Loop Start/Stop</Name>
+<Choice>Loop Start</Choice>
+<Choice>Loop Stop</Choice>
+<Val>0</Val>
+</EL>
+<U32>
+<Name>Number of Iterations</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>APT X Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT X Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>APT X Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT X Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT X Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>APT Y Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT Y Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>APT Y Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Y Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Y Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>APT Z Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT Z Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>APT Z Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Z Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Z Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Piezo X Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>Piezo X Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>Piezo X Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo X Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo X Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Piezo Y Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>Piezo Y Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>Piezo Y Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo Y Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo Y Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Delay Cluster</Name>
+<NumElts>1</NumElts>
+<U32>
+<Name>Delay (ms)</Name>
+<Val>1000</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Shutter Cluster</Name>
+<NumElts>2</NumElts>
+<EL>
+<Name>Shutter Mode</Name>
+<Choice>Open</Choice>
+<Choice>Close</Choice>
+<Choice>Fire</Choice>
+<Val>0</Val>
+</EL>
+<U32>
+<Name>Fire Duration (ms)</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Attenutation Cluster</Name>
+<NumElts>1</NumElts>
+<DBL>
+<Name>Energy (%)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Beam Alignment Cluster</Name>
+<NumElts>1</NumElts>
+<EL>
+<Name>Beam Alignment</Name>
+<Choice>Inspection</Choice>
+<Choice>Laser</Choice>
+<Val>0</Val>
+</EL>
+</Cluster>
+<Cluster>
+<Name>Pulse Picker Cluster</Name>
+<NumElts>3</NumElts>
+<EL>
+<Name>Mode</Name>
+<Choice>Finite Pulses</Choice>
+<Choice>Free Running</Choice>
+<Choice>Stop</Choice>
+<Val>0</Val>
+</EL>
+<U32>
+<Name>Frequency</Name>
+<Val>0</Val>
+</U32>
+<U32>
+<Name>No. of Finite Pulses</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Path>
+<Name>SLM Image Path</Name>
+<Val></Val>
+</Path>
+</Cluster>
+<Cluster>
+<Name>Macro Data Cluster</Name>
+<NumElts>15</NumElts>
+<U32>
+<Name>Task Number</Name>
+<Val>4</Val>
+</U32>
+<U32>
+<Name>Loop Level</Name>
+<Val>0</Val>
+</U32>
+<String>
+<Name>Task Type</Name>
+<Val>Loop</Val>
+</String>
+<Cluster>
+<Name>Loop Cluster</Name>
+<NumElts>2</NumElts>
+<EL>
+<Name>Loop Start/Stop</Name>
+<Choice>Loop Start</Choice>
+<Choice>Loop Stop</Choice>
+<Val>1</Val>
+</EL>
+<U32>
+<Name>Number of Iterations</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>APT X Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT X Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>APT X Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT X Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT X Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>APT Y Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT Y Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>APT Y Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Y Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Y Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>APT Z Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>APT Z Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>APT Z Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Z Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>APT Z Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Piezo X Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>Piezo X Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>Piezo X Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo X Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo X Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Piezo Y Cluster</Name>
+<NumElts>4</NumElts>
+<Boolean>
+<Name>Piezo Y Movement?</Name>
+<Val>0</Val>
+</Boolean>
+<DBL>
+<Name>Piezo Y Position</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo Y Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Piezo Y Acceleration</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Delay Cluster</Name>
+<NumElts>1</NumElts>
+<U32>
+<Name>Delay (ms)</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Shutter Cluster</Name>
+<NumElts>2</NumElts>
+<EL>
+<Name>Shutter Mode</Name>
+<Choice>Open</Choice>
+<Choice>Close</Choice>
+<Choice>Fire</Choice>
+<Val>0</Val>
+</EL>
+<U32>
+<Name>Fire Duration (ms)</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Attenutation Cluster</Name>
+<NumElts>1</NumElts>
+<DBL>
+<Name>Energy (%)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Beam Alignment Cluster</Name>
+<NumElts>1</NumElts>
+<EL>
+<Name>Beam Alignment</Name>
+<Choice>Inspection</Choice>
+<Choice>Laser</Choice>
+<Val>0</Val>
+</EL>
+</Cluster>
+<Cluster>
+<Name>Pulse Picker Cluster</Name>
+<NumElts>3</NumElts>
+<EL>
+<Name>Mode</Name>
+<Choice>Finite Pulses</Choice>
+<Choice>Free Running</Choice>
+<Choice>Stop</Choice>
+<Val>0</Val>
+</EL>
+<U32>
+<Name>Frequency</Name>
+<Val>0</Val>
+</U32>
+<U32>
+<Name>No. of Finite Pulses</Name>
+<Val>0</Val>
+</U32>
+</Cluster>
+<Path>
+<Name>SLM Image Path</Name>
+<Val></Val>
+</Path>
+</Cluster>
+</Array>
