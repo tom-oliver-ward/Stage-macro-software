@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DielectricConversion
 {
-    public class DataRead
+    public class ConvertedTasks
     {
         private int loopLevel;
         public int LoopLevel

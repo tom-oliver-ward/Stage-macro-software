@@ -88,5 +88,34 @@ namespace DielectricConversion
             }
             return taskLength;
         }
+
+        public void ConvertTasks(IList<string> listOfTasks)
+        {            
+            var listOfConvertedTasks = new List<ConvertedTasks>();
+            
+            foreach(var task in listOfTasks)
+            {
+                listOfConvertedTasks.Add(null);
+                int loopLevel = testLoopLevel(task);
+                string taskType = testTaskType(task);
+                //listOfConvertedTasks[listOfConvertedTasks.Count-1].LoopLevel=
+            }
+            
+        }
+
+        private string testTaskType(string task)
+        {
+            throw new NotImplementedException();
+        }
+
+        private int testLoopLevel(string task)
+        {
+            int pos = task.IndexOf("Loop Level</Name>\n<Val>");
+            pos = pos + 24;
+            int end = task.IndexOf("<Val>", pos);
+            int loopLevel = Convert.ToInt32(task.Substring(pos, end - pos));
+
+            return loopLevel;
+        }
     }
 }

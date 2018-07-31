@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataRead.cs" />
+    <Compile Include="ConvertedTasks.cs" />
     <Compile Include="MacroReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
