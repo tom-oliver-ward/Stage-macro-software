@@ -96,19 +96,30 @@ namespace DielectricConversion
             foreach(var task in listOfTasks)
             {
                 listOfConvertedTasks.Add(null);
-                int loopLevel = testLoopLevel(task);
-                string taskType = testTaskType(task);
+                int loopLevel = TestLoopLevel(task);
+                string taskType = TestTaskType(task);
+                int taskValues = AssignTasks(task,loopLevel,taskType, ref listOfConvertedTasks);
                 //listOfConvertedTasks[listOfConvertedTasks.Count-1].LoopLevel=
             }
             
         }
 
-        private string testTaskType(string task)
+        private int AssignTasks(string task, int loopLevel, string taskType, ref List<ConvertedTasks> listOfConvertedTasks)
         {
             throw new NotImplementedException();
         }
 
-        private int testLoopLevel(string task)
+        private string TestTaskType(string task)
+        {
+            int pos = task.IndexOf("Task Type</Name>\n<Val>");
+            pos = pos + 24;
+            int end = task.IndexOf("<Val>", pos);
+            string taskType = task.Substring(pos, end - pos);
+
+            return taskType;
+        }
+
+        private int TestLoopLevel(string task)
         {
             int pos = task.IndexOf("Loop Level</Name>\n<Val>");
             pos = pos + 24;
