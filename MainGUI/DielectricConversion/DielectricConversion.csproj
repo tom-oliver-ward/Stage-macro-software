@@ -39,7 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MacroReader.cs" />
+    <Compile Include="AssignMacroTasks.cs" />
+    <Compile Include="ProcessMacro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CommonFunctions;
 
 namespace DielectricConversion
 {
-    public class MacroReader
+    public class ProcessMacro
     {
         /// <summary>
         /// This Method finds the position of each task start point in the rawData list
@@ -92,25 +93,33 @@ namespace DielectricConversion
         /// <summary>
         /// Takes list of tasks and converts them to a generic form - Converted tasks
         /// </summary>
-        /// <param name="listOfTasks"></param>
+        /// <param name="listOfTasks"> takes the list of split tasks as an input</param>
         public void ConvertTasks(IList<string> listOfTasks)
         {
-            CommonFunctions.ConvertedTasks convertedTasks = new CommonFunctions.ConvertedTasks();
+            //creates a list of converted tasks to store the end result of this function - using the common class Converted Tasks
             var listOfConvertedTasks = new List<CommonFunctions.ConvertedTasks>();
             
+            //for each item in the task list, add to the converted list, determine it's inputs and then add to the task list
             foreach(var task in listOfTasks)
             {
                 listOfConvertedTasks.Add(null);
-                int loopLevel = TestLoopLevel(task);
+
+                int i = listOfConvertedTasks.Count - 1;
+                listOfConvertedTasks[i].LoopLevel = TestLoopLevel(task);
+
                 string taskType = TestTaskType(task);
-                int taskValues = AssignTasks(task,loopLevel,taskType, ref listOfConvertedTasks);
-                //listOfConvertedTasks[listOfConvertedTasks.Count-1].LoopLevel=
+
+                var convertMacro = new AssignMacroTasks();
+                convertMacro.AssignTasks(task, listOfConvertedTasks[i].LoopLevel, taskType, ref listOfConvertedTasks);           
             }
             
-        }
+        }        
 
-
-
+        /// <summary>
+        /// Finds the task type
+        /// </summary>
+        /// <param name="task">takes the given task input</param>
+        /// <returns></returns>
         private string TestTaskType(string task)
         {
             int pos = task.IndexOf("Task Type</Name>\n<Val>");
@@ -121,6 +130,11 @@ namespace DielectricConversion
             return taskType;
         }
 
+        /// <summary>
+        /// finds the loop level of the task
+        /// </summary>
+        /// <param name="task">given task</param>
+        /// <returns></returns>
         private int TestLoopLevel(string task)
         {
             int pos = task.IndexOf("Loop Level</Name>\n<Val>");
