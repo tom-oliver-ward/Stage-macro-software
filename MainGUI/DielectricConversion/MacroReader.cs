@@ -89,9 +89,14 @@ namespace DielectricConversion
             return taskLength;
         }
 
+        /// <summary>
+        /// Takes list of tasks and converts them to a generic form - Converted tasks
+        /// </summary>
+        /// <param name="listOfTasks"></param>
         public void ConvertTasks(IList<string> listOfTasks)
-        {            
-            var listOfConvertedTasks = new List<ConvertedTasks>();
+        {
+            CommonFunctions.ConvertedTasks convertedTasks = new CommonFunctions.ConvertedTasks();
+            var listOfConvertedTasks = new List<CommonFunctions.ConvertedTasks>();
             
             foreach(var task in listOfTasks)
             {
@@ -104,10 +109,7 @@ namespace DielectricConversion
             
         }
 
-        private int AssignTasks(string task, int loopLevel, string taskType, ref List<ConvertedTasks> listOfConvertedTasks)
-        {
-            throw new NotImplementedException();
-        }
+
 
         private string TestTaskType(string task)
         {

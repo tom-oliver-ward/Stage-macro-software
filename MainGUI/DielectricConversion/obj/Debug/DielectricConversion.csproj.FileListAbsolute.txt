@@ -13,3 +13,6 @@ C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversio
 C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversion\obj\Debug\DielectricConversion.pdb
 C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversion\bin\Debug\DielectricConversion.dll
 C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversion\bin\Debug\DielectricConversion.pdb
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversion\bin\Debug\CommonFunctions.dll
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversion\bin\Debug\CommonFunctions.pdb
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversion\obj\Debug\DielectricConversion.csproj.CopyComplete
