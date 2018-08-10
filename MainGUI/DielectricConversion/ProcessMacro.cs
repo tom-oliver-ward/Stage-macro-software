@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CommonFunctions;
 
+
 namespace DielectricConversion
 {
     public class ProcessMacro
@@ -106,6 +107,10 @@ namespace DielectricConversion
 
                 int i = listOfConvertedTasks.Count - 1;
                 listOfConvertedTasks[i].LoopLevel = TestLoopLevel(task);
+
+                string taskType;
+                String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "<Val>", ref taskType);
+
 
                 string taskType = TestTaskType(task);
 

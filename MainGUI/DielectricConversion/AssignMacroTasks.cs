@@ -9,6 +9,13 @@ namespace DielectricConversion
 {
     class AssignMacroTasks
     {
+        /// <summary>
+        /// method designed to take the different task use cases AND then call the relative method to deal with it
+        /// </summary>
+        /// <param name="task"></param>
+        /// <param name="loopLevel"></param>
+        /// <param name="taskType"></param>
+        /// <param name="listOfConvertedTasks"></param>
         public void AssignTasks(string task, int loopLevel, string taskType, ref List<ConvertedTasks> listOfConvertedTasks)
         {
             switch (taskType)
@@ -105,11 +112,27 @@ namespace DielectricConversion
 
             for (int i=0; i<moveRelative.Length;i++)
             {
-                //moveRelative = 
+                GenericConverter(ref moveRelative, listOfInputs, listOfVariations, task);
             }
 
             //decimal aptX, aptY, aptZ, piezoX, piezoY;
 
         }
+
+        private void GenericConverter(ref decimal[,] output, List<string> listOfInputs, List<string> listOfVariations, string task)
+        {
+            for(int i=0;i<listOfInputs.Count;i++)
+            {
+                for( int j=0; j<listOfVariations.Count;j++)
+                {
+                    string startstring = listOfInputs[i] + " " + listOfVariations[j] + "</Name>\n<Val>";
+                    output[i,j] = Convert.ToDecimal(String_operations.ExtractFromString(task, startstring, "<Val>"));
+                }
+            }
+            
+        }
+
+
+            
     }
 }
