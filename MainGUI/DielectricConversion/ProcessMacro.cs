@@ -104,18 +104,13 @@ namespace DielectricConversion
             foreach(var task in listOfTasks)
             {
                 listOfConvertedTasks.Add(null);
-
                 int i = listOfConvertedTasks.Count - 1;
-                listOfConvertedTasks[i].LoopLevel = TestLoopLevel(task);
 
-                string taskType;
-                String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "<Val>", ref taskType);
-
-
-                string taskType = TestTaskType(task);
-
+                listOfConvertedTasks[i].LoopLevel = Convert.ToInt32(String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "<Val>")); 
+                string taskType = String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "<Val>");
+                                
                 var convertMacro = new AssignMacroTasks();
-                convertMacro.AssignTasks(task, listOfConvertedTasks[i].LoopLevel, taskType, ref listOfConvertedTasks);           
+                convertMacro.AssignTasks(task, listOfConvertedTasks[i].LoopLevel, taskType, ref listOfConvertedTasks, i);           
             }
             
         }        
@@ -125,29 +120,29 @@ namespace DielectricConversion
         /// </summary>
         /// <param name="task">takes the given task input</param>
         /// <returns></returns>
-        private string TestTaskType(string task)
-        {
-            int pos = task.IndexOf("Task Type</Name>\n<Val>");
-            pos = pos + 24;
-            int end = task.IndexOf("<Val>", pos);
-            string taskType = task.Substring(pos, end - pos);
+        //private string TestTaskType(string task)
+        //{
+        //    int pos = task.IndexOf("Task Type</Name>\n<Val>");
+        //    pos = pos + 24;
+        //    int end = task.IndexOf("<Val>", pos);
+        //    string taskType = task.Substring(pos, end - pos);
 
-            return taskType;
-        }
+        //    return taskType;
+        //}
 
         /// <summary>
         /// finds the loop level of the task
         /// </summary>
         /// <param name="task">given task</param>
         /// <returns></returns>
-        private int TestLoopLevel(string task)
-        {
-            int pos = task.IndexOf("Loop Level</Name>\n<Val>");
-            pos = pos + 24;
-            int end = task.IndexOf("<Val>", pos);
-            int loopLevel = Convert.ToInt32(task.Substring(pos, end - pos));
+        //private int TestLoopLevel(string task)
+        //{
+        //    int pos = task.IndexOf("Loop Level</Name>\n<Val>");
+        //    pos = pos + 24;
+        //    int end = task.IndexOf("<Val>", pos);
+        //    int loopLevel = Convert.ToInt32(task.Substring(pos, end - pos));
 
-            return loopLevel;
-        }
+        //    return loopLevel;
+        
     }
 }
