@@ -1,0 +1,14 @@
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\obj\Debug\DielectricConversionTests1.csprojResolveAssemblyReference.cache
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\bin\Debug\DielectricConversionTests1.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\bin\Debug\DielectricConversionTests1.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\bin\Debug\CommonFunctions.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\bin\Debug\DielectricConversion.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\bin\Debug\CommonFunctions.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\bin\Debug\DielectricConversion.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\obj\Debug\DielectricConversionTests1.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\obj\Debug\DielectricConversionTests1.pdb
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\obj\Debug\DielectricConversionTests1.csprojAssemblyReference.cache
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\obj\Debug\DielectricConversionTests1.csproj.CoreCompileInputs.cache
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\obj\Debug\DielectricConversionTests1.dll
+C:\Users\twar313\Documents\GitHub\Stage-macro-software\MainGUI\DielectricConversionTests1\obj\Debug\DielectricConversionTests1.pdb

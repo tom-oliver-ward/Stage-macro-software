@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DielectricConversion
+namespace CommonFunctions
 {
-    public class DataRead
+    public class ConvertedTasks
     {
         private int loopLevel;
         public int LoopLevel

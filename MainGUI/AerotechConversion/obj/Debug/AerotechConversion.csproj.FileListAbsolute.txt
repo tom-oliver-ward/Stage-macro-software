@@ -9,3 +9,8 @@ F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\AerotechConversion\
 F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\AerotechConversion\obj\Debug\AerotechConversion.csproj.CoreCompileInputs.cache
 F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\AerotechConversion\obj\Debug\AerotechConversion.dll
 F:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\AerotechConversion\obj\Debug\AerotechConversion.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\AerotechConversion\bin\Debug\AerotechConversion.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\AerotechConversion\bin\Debug\AerotechConversion.pdb
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\AerotechConversion\obj\Debug\AerotechConversion.csprojResolveAssemblyReference.cache
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\AerotechConversion\obj\Debug\AerotechConversion.dll
+C:\Users\tom2s\Documents\GitHub\Stage-macro-software\MainGUI\AerotechConversion\obj\Debug\AerotechConversion.pdb
