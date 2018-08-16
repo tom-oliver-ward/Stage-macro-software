@@ -17,11 +17,11 @@ namespace DielectricConversionTests1
             //arrange
             var dielectricConversion = new AssignMacroTasks();
             var currentFile = new CommonFunctions.FileHandling();
-            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\macrotest.demcr";
+            string task = ;
 
             //act
             var rawData = currentFile.ReadFile(filepath);
-            dielectricConversion.MoveRelative()
+            dielectricConversion.MoveRelative();
 
             //assert
             Assert.Fail();
