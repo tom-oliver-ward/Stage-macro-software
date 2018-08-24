@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DielectricConversion
 {
-    class AssignMacroTasks
+    public class AssignMacroTasks
     {
         /// <summary>
         /// method designed to take the different task use cases AND then call the relative method to deal with it
@@ -94,7 +94,21 @@ namespace DielectricConversion
                 "Number of Iterations",
                 "Loop Start/Stop",
             };
+
+            var listOfVariations = new List<string>
+            {
+                ""
+            };
+
+            var loop = new decimal[listOfInputs.Count, listOfVariations.Count];
+            GenericConverter(ref loop, listOfInputs, listOfVariations, task);
+
+            //check this , yongje seems very haphazard
+            listOfConvertedTasks[index].Loop = Convert.ToInt32(loop[0, 0]) + 1;
+            listOfConvertedTasks[index].LoopLevel = loopLevel + Convert.ToInt32(loop[1, 0]) + 1;
         }
+
+
 
         /// <summary>
         /// Move Relative options
@@ -103,7 +117,7 @@ namespace DielectricConversion
         /// <param name="loopLevel"></param>
         /// <param name="listOfConvertedTasks"></param>
         /// <param name="index"></param>
-        private void MoveRelative(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+        public void MoveRelative(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {            
             var listOfInputs = new List<string>
             {
@@ -123,10 +137,7 @@ namespace DielectricConversion
 
             var moveRelative = new decimal[listOfInputs.Count, listOfVariations.Count];
 
-            for (int i=0; i<moveRelative.Length;i++)
-            {
-                GenericConverter(ref moveRelative, listOfInputs, listOfVariations, task);
-            }
+            GenericConverter(ref moveRelative, listOfInputs, listOfVariations, task);            
 
             //could really be more efficient
             listOfConvertedTasks[index].XMotion[0] = moveRelative[0 ,0] + moveRelative[4, 0];
