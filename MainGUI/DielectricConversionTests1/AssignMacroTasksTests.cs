@@ -16,12 +16,11 @@ namespace DielectricConversionTests1
         {
             //arrange
             var dielectricConversion = new AssignMacroTasks();
-            var currentFile = new CommonFunctions.FileHandling();
-            string task = ;
+            var currentFile = new CommonFunctions.FileHandling();            
 
             //act
-            var rawData = currentFile.ReadFile(filepath);
-            dielectricConversion.MoveRelative();
+            //var rawData = currentFile.ReadFile(filepath);
+            //dielectricConversion.MoveRelative();
 
             //assert
             Assert.Fail();

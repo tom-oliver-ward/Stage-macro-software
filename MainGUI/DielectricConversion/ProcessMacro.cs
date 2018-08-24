@@ -43,7 +43,7 @@ namespace DielectricConversion
         /// <param name="rawData">The Datalist read in from the macro file from Common.Filehandling</param>
         /// <param name="commandSplits">variable detailing task splits</param>
         /// <returns></returns>
-        private IList<string> SplitTasks(IList<string> rawData, IList<int> commandSplits)
+        public static IList<string> SplitTasks(IList<string> rawData, IList<int> commandSplits)
         {
             //casts rawData into a list to allow getrange
             var rawDataList = new List<string>(rawData);
@@ -74,7 +74,7 @@ namespace DielectricConversion
         /// <param name="commandSplits">variable detailing task splits</param>
         /// <param name="totalLength">Count of rawdata</param>
         /// <returns></returns>
-        private int FindTaskLength(IList<int> commandSplits, int totalLength)
+        public static int FindTaskLength(IList<int> commandSplits, int totalLength)
         {
             
             int taskLength;
