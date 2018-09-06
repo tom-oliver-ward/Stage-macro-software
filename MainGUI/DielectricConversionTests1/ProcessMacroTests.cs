@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DielectricConversion.Tests
 {
     [TestClass()]
-    public class MacroReaderTests
+    public class ProcessMacroTests
     {
 
         [TestMethod()]
@@ -31,15 +31,22 @@ namespace DielectricConversion.Tests
 
         //not yet written
         [TestMethod()]
-        public void ConvertTasksTest()
+        public void SplitTasksTest()
         {
             //arange
-
+            var processMacro = new ProcessMacro();
+            var currentFile = new CommonFunctions.FileHandling();
+            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\macrotest.demcr";
+            string filepathFirstLine = AppDomain.CurrentDomain.BaseDirectory + "\\firstline.txt";
 
             //act
-
+            var rawData = currentFile.ReadFile(filepath);
+            var firstLine = currentFile.ReadFile(filepathFirstLine);
+            var splits = processMacro.FindCommandSplits(rawData);
+            var listofTasks = ProcessMacro.SplitTasks(rawData, splits);
 
             //assert
+            Assert.AreEqual(firstLine[0], listofTasks[0]);
 
         }
 

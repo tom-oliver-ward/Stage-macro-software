@@ -51,7 +51,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AssignMacroTasksTests.cs" />
-    <Compile Include="MacroReaderTests.cs" />
+    <Compile Include="ProcessMacroTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

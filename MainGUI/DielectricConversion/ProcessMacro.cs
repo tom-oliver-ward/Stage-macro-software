@@ -60,7 +60,7 @@ namespace DielectricConversion
             //For each split, extract the task, and convert it from list entries to a string, then add task to list of tasks
             for(int i = 0; i < commandSplits.Count; i++)
             {
-                task = (rawDataList.GetRange(commandSplits[i],taskLength));
+                task = (rawDataList.GetRange(commandSplits[i],taskLength-3));
                 taskString = string.Join("\n", task);
                 listOfTasks.Add(taskString);
             }
