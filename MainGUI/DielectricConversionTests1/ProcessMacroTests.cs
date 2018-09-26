@@ -36,7 +36,7 @@ namespace DielectricConversion.Tests
             //arange
             var processMacro = new ProcessMacro();
             var currentFile = new CommonFunctions.FileHandling();
-            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\macrotest.demcr";
+            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\Absolute APT X 10, 10, 10.demcr";
             string filepathFirstLine = AppDomain.CurrentDomain.BaseDirectory + "\\firstline.demcr";
 
             //act
@@ -72,15 +72,22 @@ namespace DielectricConversion.Tests
         [TestMethod()]
         public void ConvertTasksTest()
         {
-            //arrange             
-            var testSplits = new List<int>() { 1 };
-            var totalLength = 5;
+            //arrange   
+            var processMacro = new ProcessMacro();
+            var currentFile = new CommonFunctions.FileHandling();
+            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\Absolute APT X 10, 10, 10.demcr";
 
             //act
-            var taskLength = ProcessMacro.FindTaskLength(testSplits, totalLength);
+            //get initial tasks
+            var rawData = currentFile.ReadFile(filepath);
+            var splits = processMacro.FindCommandSplits(rawData);
+            var listofTasks = ProcessMacro.SplitTasks(rawData, splits);
+
+            //apply macro
+            
 
             //assert
-            Assert.AreEqual(4, taskLength);
+            Assert.AreEqual(4, 4);
         }
     }
 }

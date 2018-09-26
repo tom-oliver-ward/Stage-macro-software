@@ -74,7 +74,17 @@ namespace DielectricConversion
 
         private void Delay(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {
-            throw new NotImplementedException();
+            var listOfInputs = new List<string>
+            {
+                "Delay Time"
+            };
+
+            var listOfVariations = new List<string> { "" };
+
+            var loop = new decimal[listOfInputs.Count, listOfVariations.Count];
+            GenericConverter(ref loop, listOfInputs, listOfVariations, task);
+
+            listOfConvertedTasks[index].Delay = Convert.ToDouble(loop[0, 0]);
         }
 
         private void Shutter(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
@@ -96,7 +106,7 @@ namespace DielectricConversion
 
         private void BeamAlignment(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {
-            var listOfInputs = new List<string>{ "" };
+            var listOfInputs = new List<string>{ "Alignment" };
             var listOfVariations = new List<string> { "" };
 
             var loop = new decimal[listOfInputs.Count, listOfVariations.Count];
