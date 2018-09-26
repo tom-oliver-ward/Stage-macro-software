@@ -8,6 +8,15 @@ namespace CommonFunctions
 {
     public class ConvertedTasks
     {
+
+        //1 means Incremental, 2 means absolute
+        private int moveType;
+        public int MoveType
+        {
+            get { return moveType; }
+            set { moveType = value; }
+        }
+
         private int loopLevel;
         public int LoopLevel
         {

@@ -18,16 +18,16 @@ namespace DielectricConversion
         public IList<int> FindCommandSplits(IList<string> rawData)
         {
             //variable to store position of task if found
-            int pos=0;
+            int pos = 0;
             //List to store positions of task
             var commandSplits = new List<int>();
 
             //searches for task split, if found assigns to commandSPlits and resets pos variable
-            for (int i=0; i < rawData.Count; i++)
+            for (int i = 0; i < rawData.Count; i++)
             {
                 pos = rawData[i].IndexOf("Task Number");
 
-                if(pos>0)
+                if (pos > 0)
                 {
                     commandSplits.Add(i);
                     pos = 0;
@@ -52,20 +52,20 @@ namespace DielectricConversion
             var listOfTasks = new List<string>();
             var task = new List<string>();
             string taskString;
-            
+
             //calculates the task length of the file
-            int taskLength = FindTaskLength(commandSplits, rawData.Count);   
-                    
-                        
+            int taskLength = FindTaskLength(commandSplits, rawData.Count);
+
+
             //For each split, extract the task, and convert it from list entries to a string, then add task to list of tasks
-            for(int i = 0; i < commandSplits.Count; i++)
+            for (int i = 0; i < commandSplits.Count; i++)
             {
-                task = (rawDataList.GetRange(commandSplits[i],taskLength-3));
+                task = (rawDataList.GetRange(commandSplits[i], taskLength - 3));
                 taskString = string.Join("\n", task);
                 listOfTasks.Add(taskString);
             }
-            
-            return listOfTasks;            
+
+            return listOfTasks;
         }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace DielectricConversion
         /// <returns></returns>
         public static int FindTaskLength(IList<int> commandSplits, int totalLength)
         {
-            
+
             int taskLength;
 
             //incase there is only one task in the matrix
@@ -84,34 +84,85 @@ namespace DielectricConversion
             {
                 taskLength = commandSplits[1] - commandSplits[0];
             }
-            catch(System.ArgumentOutOfRangeException)
+            catch (System.ArgumentOutOfRangeException)
             {
                 taskLength = totalLength - commandSplits[0];
             }
             return taskLength;
         }
 
-        //convert this to a simpler task
+        
         /// <summary>
         /// Takes list of tasks and converts them to a generic form - Converted tasks
         /// </summary>
         /// <param name="listOfTasks"> takes the list of split tasks as an input</param>
-        public void ExtractTaskType(string task)
+        public string ExtractTaskType(string task)
         {
-            //creates a list of converted tasks to store the end result of this function - using the common class Converted Tasks
-            var listOfConvertedTasks = new List<CommonFunctions.ConvertedTasks>();
-            
-            //for each item in the task list, add to the converted list, determine it's inputs and then add to the task list
-            foreach(var task in listOfTasks)
-            {
-                listOfConvertedTasks.Add(null);
-                int i = listOfConvertedTasks.Count - 1;
-
-                listOfConvertedTasks[i].LoopLevel = Convert.ToInt32(String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "<Val>")); 
-                string taskType = String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "<Val>");                               
-                          
-            }          
+            string taskType = String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "</Val>");
+            return taskType;
         }
+
+        /// <summary>
+        /// method designed to take the different task use cases AND then call the relative method to deal with it
+        /// </summary>
+        /// <param name="task"></param>
+        /// <param name="loopLevel"></param>
+        /// <param name="taskType"></param>
+        /// <param name="listOfConvertedTasks"></param>
+        public void SelectTask(string task, string taskType, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+        {
+            var convertMacro = new AssignMacroTasks();
+
+            switch (taskType)
+            {
+
+                case "Move Relative":
+                    convertMacro.Move(task, ref listOfConvertedTasks, index);
+                    listOfConvertedTasks[index].MoveType = 1;
+                    break;
+
+                case "Loop":
+                    convertMacro.Loop(task, ref listOfConvertedTasks, index);
+                    break;
+
+                case "Beam Alignment":
+                    convertMacro.BeamAlignment(task, ref listOfConvertedTasks, index);
+                    break;
+
+                case "Shutter":
+                    convertMacro.Shutter(task, ref listOfConvertedTasks, index);
+                    break;
+
+                case "Delay":
+                    convertMacro.Delay(task, ref listOfConvertedTasks, index);
+                    break;
+
+                case "Attenuator":
+                    convertMacro.Attenuator(task, ref listOfConvertedTasks, index);
+                    break;
+
+                case "":
+                    convertMacro.SLM(task, ref listOfConvertedTasks, index);
+                    break;
+
+                case "Pulse Picker":
+                    convertMacro.PulsePicker(task, ref listOfConvertedTasks, index);
+                    break;
+
+                case "Move Absolute":
+                    convertMacro.Move(task, ref listOfConvertedTasks, index);
+                    listOfConvertedTasks[index].MoveType = 2;
+                    break;
+            }
+
+        }
+
+        public void SetLoopLevel(string task, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+        {
+
+        }
+
+        //need to add for loop level
 
         ////convert this to a simpler task
         ///// <summary>

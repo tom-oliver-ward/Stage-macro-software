@@ -70,7 +70,7 @@ namespace DielectricConversion.Tests
 
         //not ready
         [TestMethod()]
-        public void ConvertTasksTest()
+        public void ExtractTaskTypeTest()
         {
             //arrange   
             var processMacro = new ProcessMacro();
@@ -84,10 +84,11 @@ namespace DielectricConversion.Tests
             var listofTasks = ProcessMacro.SplitTasks(rawData, splits);
 
             //apply macro
-            
+            string type = processMacro.ExtractTaskType(listofTasks[0]);
+            string expected = "Move Absolute";
 
             //assert
-            Assert.AreEqual(4, 4);
+            Assert.AreEqual(expected, type);
         }
     }
 }

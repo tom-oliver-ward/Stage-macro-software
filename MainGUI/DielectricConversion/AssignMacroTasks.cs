@@ -9,70 +9,43 @@ namespace DielectricConversion
 {
     public class AssignMacroTasks
     {
-        /// <summary>
-        /// method designed to take the different task use cases AND then call the relative method to deal with it
-        /// </summary>
-        /// <param name="task"></param>
-        /// <param name="loopLevel"></param>
-        /// <param name="taskType"></param>
-        /// <param name="listOfConvertedTasks"></param>
-        public void AssignTasks(string task, int loopLevel, string taskType, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+        public void PulsePicker(string task, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {
-            switch (taskType)
+            
+
+            listOfConvertedTasks[index].NumberOfPulses
+        }
+
+        public void SLM(string task, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+        {
+            var listOfInputs = new List<string>
             {
-                case "Move Relative":
-                    MoveRelative(task, loopLevel, ref listOfConvertedTasks, index);
-                    break;
+                "Energy"
+            };
 
-                case "Loop":
-                    Loop(task, loopLevel, ref listOfConvertedTasks, index);
-                    break;
+            var listOfVariations = new List<string> { "" };
+            string startstring = listOfInputs[0] + " " + listOfVariations[0] + "</Name>\n<Val>";
+            string output = String_operations.ExtractFromString(task, startstring, "</Val>");
 
-                case "Beam Alignment":
-                    BeamAlignment(task, loopLevel, ref listOfConvertedTasks, index);
-                    break;
-
-                case "Shutter":
-                    Shutter(task, loopLevel, ref listOfConvertedTasks, index);
-                    break;
-
-                case "Delay":
-                    Delay(task, loopLevel, ref listOfConvertedTasks, index);
-                    break;
-
-                case "Attenuator":
-                    Attenuator(task, loopLevel, ref listOfConvertedTasks, index);
-                    break;
-
-                case "":
-                    SLM(task, loopLevel, ref listOfConvertedTasks, index);
-                    break;
-
-                case "Pulse Picker":
-                    PulsePicker(task, loopLevel, ref listOfConvertedTasks, index);
-                    break;
-
-                //move absolute
-            }
-
+            listOfConvertedTasks[index].FilePathSLM = output;
         }
 
-        private void PulsePicker(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+        public void Attenuator(string task, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {
-            throw new NotImplementedException();
+            var listOfInputs = new List<string>
+            {
+                "Energy"
+            };
+
+            var listOfVariations = new List<string> { "" };
+
+            var loop = new decimal[listOfInputs.Count, listOfVariations.Count];
+            GenericConverter(ref loop, listOfInputs, listOfVariations, task);
+
+            listOfConvertedTasks[index].Attenuator = (loop[0, 0]);
         }
 
-        private void SLM(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Attenuator(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Delay(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+        public void Delay(string task, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {
             var listOfInputs = new List<string>
             {
@@ -87,7 +60,7 @@ namespace DielectricConversion
             listOfConvertedTasks[index].Delay = Convert.ToDouble(loop[0, 0]);
         }
 
-        private void Shutter(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+         public void Shutter(string task, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {
             var listOfInputs = new List<string>
             {
@@ -104,7 +77,7 @@ namespace DielectricConversion
             listOfConvertedTasks[index].ShutterOpenTime = Convert.ToDouble(loop[0, 0]);
         }
 
-        private void BeamAlignment(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+        public void BeamAlignment(string task, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {
             var listOfInputs = new List<string>{ "Alignment" };
             var listOfVariations = new List<string> { "" };
@@ -115,7 +88,7 @@ namespace DielectricConversion
             listOfConvertedTasks[index].BeamPosition= Convert.ToInt32(loop[0, 0]);
         }
 
-        private void Loop(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+        public void Loop(string task, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {
             var listOfInputs = new List<string>
             {
@@ -130,7 +103,7 @@ namespace DielectricConversion
 
             //check this , yongje seems very haphazard
             listOfConvertedTasks[index].Loop = Convert.ToInt32(loop[0, 0]) + 1;
-            listOfConvertedTasks[index].LoopLevel = loopLevel + Convert.ToInt32(loop[1, 0]) + 1;
+            
         }
 
 
@@ -142,7 +115,7 @@ namespace DielectricConversion
         /// <param name="loopLevel"></param>
         /// <param name="listOfConvertedTasks"></param>
         /// <param name="index"></param>
-        public void MoveRelative(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+        public void Move(string task, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {            
             var listOfInputs = new List<string>
             {
@@ -178,6 +151,11 @@ namespace DielectricConversion
             listOfConvertedTasks[index].ZMotion[2] = moveRelative[2, 2];  
         }
 
+        internal void MoveAbsolute(string task, ref List<ConvertedTasks> listOfConvertedTasks, int index)
+        {
+            throw new NotImplementedException();
+        }
+
 
         /// <summary>
         /// takes the list of inputs required and variations to find the value for each input
@@ -193,7 +171,7 @@ namespace DielectricConversion
                 for( int j=0; j<listOfVariations.Count;j++)
                 {
                     string startstring = listOfInputs[i] + " " + listOfVariations[j] + "</Name>\n<Val>";
-                    output[i,j] = Convert.ToDecimal(String_operations.ExtractFromString(task, startstring, "<Val>"));
+                    output[i,j] = Convert.ToDecimal(String_operations.ExtractFromString(task, startstring, "</Val>"));
                 }
             }
             
