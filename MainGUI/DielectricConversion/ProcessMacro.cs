@@ -91,11 +91,12 @@ namespace DielectricConversion
             return taskLength;
         }
 
+        //convert this to a simpler task
         /// <summary>
         /// Takes list of tasks and converts them to a generic form - Converted tasks
         /// </summary>
         /// <param name="listOfTasks"> takes the list of split tasks as an input</param>
-        public void ConvertTasks(IList<string> listOfTasks)
+        public void ExtractTaskType(string task)
         {
             //creates a list of converted tasks to store the end result of this function - using the common class Converted Tasks
             var listOfConvertedTasks = new List<CommonFunctions.ConvertedTasks>();
@@ -107,11 +108,33 @@ namespace DielectricConversion
                 int i = listOfConvertedTasks.Count - 1;
 
                 listOfConvertedTasks[i].LoopLevel = Convert.ToInt32(String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "<Val>")); 
-                string taskType = String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "<Val>");
-                                
-                var convertMacro = new AssignMacroTasks();
-                convertMacro.AssignTasks(task, listOfConvertedTasks[i].LoopLevel, taskType, ref listOfConvertedTasks, i);           
+                string taskType = String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "<Val>");                               
+                          
             }          
-        }        
+        }
+
+        ////convert this to a simpler task
+        ///// <summary>
+        ///// Takes list of tasks and converts them to a generic form - Converted tasks
+        ///// </summary>
+        ///// <param name="listOfTasks"> takes the list of split tasks as an input</param>
+        //public void ConvertTasks(IList<string> listOfTasks)
+        //{
+        //    //creates a list of converted tasks to store the end result of this function - using the common class Converted Tasks
+        //    var listOfConvertedTasks = new List<CommonFunctions.ConvertedTasks>();
+
+        //    //for each item in the task list, add to the converted list, determine it's inputs and then add to the task list
+        //    foreach (var task in listOfTasks)
+        //    {
+        //        listOfConvertedTasks.Add(null);
+        //        int i = listOfConvertedTasks.Count - 1;
+
+        //        listOfConvertedTasks[i].LoopLevel = Convert.ToInt32(String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "<Val>"));
+        //        string taskType = String_operations.ExtractFromString(task, "Task Type</Name>\n<Val>", "<Val>");
+
+        //        var convertMacro = new AssignMacroTasks();
+        //        convertMacro.AssignTasks(task, listOfConvertedTasks[i].LoopLevel, taskType, ref listOfConvertedTasks, i);
+        //    }
+        //}
     }
 }
