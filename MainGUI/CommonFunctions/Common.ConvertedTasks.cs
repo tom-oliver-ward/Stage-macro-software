@@ -51,8 +51,11 @@ namespace CommonFunctions
             set { delay = value; }
         }
 
-        private bool shutterState;
-        public bool ShutterState
+        //0 open
+        //1 closed
+        //2 fire
+        private int shutterState;
+        public int ShutterState
         {
             get { return shutterState; }
             set { shutterState = value; }
@@ -72,7 +75,7 @@ namespace CommonFunctions
             set { attenuator = value; }
         }
 
-        //1 inspection, 2 position
+        //0 inspection, 1 laser
         private int beamPosition;
         public int BeamPosition
         {

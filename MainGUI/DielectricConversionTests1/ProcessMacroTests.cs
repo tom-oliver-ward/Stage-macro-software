@@ -29,7 +29,7 @@ namespace DielectricConversion.Tests
             Assert.AreEqual(lengthExpected, splits.Count);
         }
 
-        //not yet written
+        
         [TestMethod()]
         public void SplitTasksTest()
         {
@@ -56,6 +56,21 @@ namespace DielectricConversion.Tests
 
         [TestMethod()]
         public void FindTaskLengthTest()
+        {
+            //arrange             
+            var testSplits = new List<int>() { 1 };
+            var totalLength = 5;
+
+            //act
+            var taskLength = ProcessMacro.FindTaskLength(testSplits, totalLength);
+
+            //assert
+            Assert.AreEqual(4, taskLength);
+        }
+
+        //not ready
+        [TestMethod()]
+        public void ConvertTasksTest()
         {
             //arrange             
             var testSplits = new List<int>() { 1 };

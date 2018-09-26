@@ -79,12 +79,30 @@ namespace DielectricConversion
 
         private void Shutter(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {
-            throw new NotImplementedException();
+            var listOfInputs = new List<string>
+            {
+                "Shutter State",
+                "Shutter Time",
+            };
+
+            var listOfVariations = new List<string> { "" };
+
+            var loop = new decimal[listOfInputs.Count, listOfVariations.Count];
+            GenericConverter(ref loop, listOfInputs, listOfVariations, task);
+
+            listOfConvertedTasks[index].ShutterState = Convert.ToInt32(loop[0, 0]);
+            listOfConvertedTasks[index].ShutterOpenTime = Convert.ToDouble(loop[0, 0]);
         }
 
         private void BeamAlignment(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
         {
-            throw new NotImplementedException();
+            var listOfInputs = new List<string>{ "" };
+            var listOfVariations = new List<string> { "" };
+
+            var loop = new decimal[listOfInputs.Count, listOfVariations.Count];
+            GenericConverter(ref loop, listOfInputs, listOfVariations, task);
+
+            listOfConvertedTasks[index].BeamPosition= Convert.ToInt32(loop[0, 0]);
         }
 
         private void Loop(string task, int loopLevel, ref List<ConvertedTasks> listOfConvertedTasks, int index)
@@ -95,10 +113,7 @@ namespace DielectricConversion
                 "Loop Start/Stop",
             };
 
-            var listOfVariations = new List<string>
-            {
-                ""
-            };
+            var listOfVariations = new List<string> { "" };
 
             var loop = new decimal[listOfInputs.Count, listOfVariations.Count];
             GenericConverter(ref loop, listOfInputs, listOfVariations, task);
