@@ -36,6 +36,30 @@ namespace CommonFunctions
             return text;            
         }
 
+        /// <summary>
+        /// reads the text in the given file as a single string
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <returns></returns>
+        public string ReadFileSingleLine(string filePath)
+        {
+            //variable to store data read
+            string text;
+
+            //try read file
+            try
+            {
+                
+                text = File.ReadAllText(filePath);
+            }
+            catch (FileNotFoundException)
+            {
+                text = null;
+            }
+
+            return text;
+        }
+
         public int ReadFileType(string filepath)
         {
             //Where 0 is Aerotech, 1 Dielectric, 2 is JPSA, -1 is error

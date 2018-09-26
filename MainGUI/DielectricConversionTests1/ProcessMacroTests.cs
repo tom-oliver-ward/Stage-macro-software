@@ -37,16 +37,20 @@ namespace DielectricConversion.Tests
             var processMacro = new ProcessMacro();
             var currentFile = new CommonFunctions.FileHandling();
             string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\macrotest.demcr";
-            string filepathFirstLine = AppDomain.CurrentDomain.BaseDirectory + "\\firstline.txt";
+            string filepathFirstLine = AppDomain.CurrentDomain.BaseDirectory + "\\firstline.demcr";
 
             //act
             var rawData = currentFile.ReadFile(filepath);
-            var firstLine = currentFile.ReadFile(filepathFirstLine);
+            string firstLine = currentFile.ReadFileSingleLine(filepathFirstLine);
             var splits = processMacro.FindCommandSplits(rawData);
             var listofTasks = ProcessMacro.SplitTasks(rawData, splits);
 
+            string expected = firstLine.Substring(0, 10);
+            string actual = listofTasks[0];
+            actual = actual.Substring(0, 10);
+
             //assert
-            Assert.AreEqual(firstLine[0], listofTasks[0]);
+            Assert.AreEqual(expected, actual);
 
         }
 

@@ -32,6 +32,22 @@ namespace CommonFunctions.Tests
         }
 
         [TestMethod()]
+        public void ReadFileLineTest()
+        {
+            //Arrange
+
+            FileHandling currentFile = new FileHandling();
+            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\ReadLineTest.demcr";
+            string result = @"<Name>Task Number</Name>\n<Val>1</Val>\n";
+
+            //Act
+            var actual = currentFile.ReadFileSingleLine(filepath);
+
+            //Assert
+            Assert.AreEqual(result, actual);
+        }
+
+        [TestMethod()]
         public void ReadFileTypeTest()
         {
             //Arrange

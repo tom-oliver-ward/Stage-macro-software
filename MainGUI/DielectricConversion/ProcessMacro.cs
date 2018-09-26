@@ -111,38 +111,7 @@ namespace DielectricConversion
                                 
                 var convertMacro = new AssignMacroTasks();
                 convertMacro.AssignTasks(task, listOfConvertedTasks[i].LoopLevel, taskType, ref listOfConvertedTasks, i);           
-            }
-            
+            }          
         }        
-
-        /// <summary>
-        /// Finds the task type
-        /// </summary>
-        /// <param name="task">takes the given task input</param>
-        /// <returns></returns>
-        //private string TestTaskType(string task)
-        //{
-        //    int pos = task.IndexOf("Task Type</Name>\n<Val>");
-        //    pos = pos + 24;
-        //    int end = task.IndexOf("<Val>", pos);
-        //    string taskType = task.Substring(pos, end - pos);
-
-        //    return taskType;
-        //}
-
-        /// <summary>
-        /// finds the loop level of the task
-        /// </summary>
-        /// <param name="task">given task</param>
-        /// <returns></returns>
-        //private int TestLoopLevel(string task)
-        //{
-        //    int pos = task.IndexOf("Loop Level</Name>\n<Val>");
-        //    pos = pos + 24;
-        //    int end = task.IndexOf("<Val>", pos);
-        //    int loopLevel = Convert.ToInt32(task.Substring(pos, end - pos));
-
-        //    return loopLevel;
-        
     }
 }
